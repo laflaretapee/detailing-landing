@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AUTOSTYLE — Связь с мастером | Детейлинг & Дооснащение</title>
-  <meta name="description" content="AUTOSTYLE — детейлинг, оклейка полиуретаном, Bi-LED свет, тонировка, ремонт стекол, химчистка. Напишите мастеру в Telegram, МАКС или ВКонтакте.">
+  <meta name="description" content="AUTOSTYLE — детейлинг, бронирование кузова, Bi-LED свет, тонировка, шумоизоляция, химчистка. Свяжитесь с мастером в Telegram, МАКС или ВКонтакте.">
 
   <!-- Inter font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
             brand: {
               bg: '#0c0e12',
               card: '#14171f',
-              cardHover: '#1a1f2b',
+              cardHover: '#1c222e',
               border: '#242a38',
               borderLight: '#323a4d',
               accent: '#d49b28',
@@ -35,23 +35,19 @@
     }
   </script>
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
   <style>
     body {
       background-color: #0c0e12;
       color: #e2e8f0;
       min-height: 100vh;
     }
-    /* Solid, clean button styles without blur or rainbow slop */
     .btn-contact {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      padding: 14px 18px;
-      border-radius: 10px;
+      padding: 13px 16px;
+      border-radius: 12px;
       background-color: #14171f;
       border: 1px solid #242a38;
       transition: all 0.15s ease-in-out;
@@ -59,140 +55,172 @@
     .btn-contact:hover {
       background-color: #1c222e;
       border-color: #3b4559;
+      transform: translateY(-1px);
+    }
+    .btn-contact:active {
+      transform: translateY(0);
     }
   </style>
 </head>
 <body class="flex flex-col items-center justify-between p-4 sm:p-6 antialiased selection:bg-neutral-800">
 
-  <main class="w-full max-w-md mx-auto my-auto py-6 flex flex-col items-center">
+  <main class="w-full max-w-md mx-auto my-auto py-4 flex flex-col items-center">
     
-    <!-- Top Studio Avatar / Badge -->
-    <div class="w-16 h-16 rounded-2xl bg-brand-card border border-brand-border flex items-center justify-center text-brand-accent shadow-sm mb-4">
-      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
-        <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
-      </svg>
+    <!-- Top BMW Photo Avatar -->
+    <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-2 border-brand-border shadow-xl mb-4 group">
+      <img 
+        src="bmw-avatar.jpg" 
+        alt="AUTOSTYLE BMW M4 Detailing" 
+        class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
+      >
+      <div class="absolute inset-0 border border-white/10 rounded-2xl pointer-events-none"></div>
     </div>
 
-    <!-- Title & Slogan -->
-    <h1 class="text-2xl font-bold tracking-wider text-white uppercase font-mono mb-1">
+    <!-- Title & Brand -->
+    <h1 class="text-2xl font-bold tracking-wider text-white uppercase font-mono mb-0.5">
       AUTOSTYLE
     </h1>
-    <p class="text-xs uppercase tracking-widest text-neutral-400 font-medium mb-2">
+    <p class="text-[11px] uppercase tracking-widest text-neutral-400 font-medium mb-3">
       Detailing & Car Studio
     </p>
 
     <!-- Slogan from card -->
-    <div class="inline-flex items-center gap-2 text-xs text-brand-accent bg-brand-card border border-brand-border px-3.5 py-1.5 rounded-full mb-6 text-center">
+    <div class="inline-flex items-center gap-2 text-xs font-medium text-brand-accent bg-brand-card border border-brand-border px-3.5 py-1.5 rounded-full mb-5 text-center">
       <span>Улучшаем авто • Подстраиваемся под ваш бюджет</span>
     </div>
 
-    <p class="text-xs text-neutral-400 text-center max-w-sm mb-6 leading-relaxed">
-      Частный мастер. Выберите удобный мессенджер для консультации, расчета стоимости и записи:
+    <p class="text-xs text-neutral-400 text-center max-w-xs mb-5 leading-relaxed">
+      Частный мастер. Напишите или позвоните для консультации и записи на удобный день:
     </p>
 
-    <!-- ================= PRIMARY ACTION BUTTONS (MESSENGERS) ================= -->
+    <!-- ================= MESSENGER BUTTONS WITH AUTHENTIC ICONS ================= -->
     <div class="w-full space-y-2.5 mb-6">
       
       <!-- 1. Telegram -->
       <a href="https://t.me/Kvv702" target="_blank" rel="noopener" class="btn-contact group">
         <div class="flex items-center gap-3.5">
-          <div class="w-9 h-9 rounded-lg bg-[#229ED9]/15 text-[#229ED9] flex items-center justify-center shrink-0">
-            <i data-lucide="send" class="w-5 h-5"></i>
+          <div class="w-10 h-10 rounded-xl bg-[#229ED9]/15 text-[#229ED9] flex items-center justify-center shrink-0">
+            <!-- Telegram SVG -->
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
           </div>
           <div class="text-left">
-            <div class="text-sm font-semibold text-white">Написать в Telegram</div>
-            <div class="text-[11px] text-neutral-400">@Kvv702 • Быстрый ответ, фото работ</div>
+            <div class="text-sm font-semibold text-white">Telegram</div>
+            <div class="text-[11px] text-neutral-400">@Kvv702 • Быстрый ответ, расчет стоимости</div>
           </div>
         </div>
-        <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-500 group-hover:text-white transition"></i>
+        <svg class="w-4 h-4 text-neutral-500 group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
       </a>
 
       <!-- 2. MAX Messenger -->
       <a href="https://max.ru/u/f9LHodD0cOJJ_ij3U2VX4EVuaM7viMjRkg3LHsV6azde_b54Ucq6N0Qh3JE" target="_blank" rel="noopener" class="btn-contact group">
         <div class="flex items-center gap-3.5">
-          <div class="w-9 h-9 rounded-lg bg-brand-accent/15 text-brand-accent flex items-center justify-center font-bold text-sm shrink-0">
-            M
+          <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+            <!-- Modern Chat Bubble with M -->
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3.5 12.5h-1.8l-2.7-5.2-2.7 5.2H7.5V7.5h1.8v4.6l2.1-4.2h1.2l2.1 4.2V7.5h1.8v7z"/>
+            </svg>
           </div>
           <div class="text-left">
             <div class="text-sm font-semibold text-white">Мессенджер МАКС</div>
-            <div class="text-[11px] text-neutral-400">Прямой чат с мастером</div>
+            <div class="text-[11px] text-neutral-400">Прямой диалог с мастером</div>
           </div>
         </div>
-        <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-500 group-hover:text-white transition"></i>
+        <svg class="w-4 h-4 text-neutral-500 group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
       </a>
 
       <!-- 3. VKontakte -->
       <a href="https://vk.ru/vk.loginn" target="_blank" rel="noopener" class="btn-contact group">
         <div class="flex items-center gap-3.5">
-          <div class="w-9 h-9 rounded-lg bg-[#0077FF]/15 text-[#0077FF] flex items-center justify-center shrink-0">
-            <i data-lucide="share-2" class="w-5 h-5"></i>
+          <div class="w-10 h-10 rounded-xl bg-[#0077FF]/15 text-[#0077FF] flex items-center justify-center shrink-0">
+            <!-- VK Official SVG -->
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M15.684 0H8.316C3.592 0 0 3.592 0 8.316v7.368C0 20.408 3.592 24 8.316 24h7.368C20.408 24 24 20.408 24 15.684V8.316C24 3.592 20.408 0 15.684 0zm4.515 17.27h-2.18c-.825 0-1.077-.655-2.556-2.134-1.288-1.26-1.86-1.424-2.18-1.424-.447 0-.573.127-.573.74v1.895c0 .524-.168.923-1.55.923-2.288 0-4.83-1.389-6.626-3.978-2.7-3.83-3.447-6.716-3.447-7.31 0-.328.127-.633.74-.633h2.182c.552 0 .762.253.974.848 1.066 3.09 2.85 5.803 3.585 5.803.275 0 .402-.127.402-.825V10.22c-.084-1.48-.868-1.608-.868-2.138 0-.253.21-.508.55-.508h3.428c.465 0 .633.253.633.782v4.21c0 .444.19.613.317.613.275 0 .508-.17.994-.656 1.545-1.735 2.646-4.337 2.646-4.337.148-.317.402-.613.952-.613h2.182c.655 0 .803.338.655.803-.275 1.29-2.937 4.97-3.085 5.223-.233.36-.317.528 0 .952.233.317 1.015.994 1.545 1.608 1.968 2.222 2.222 3.09 2.222 3.576 0 .529-.38.529-.93.529z"/>
+            </svg>
           </div>
           <div class="text-left">
             <div class="text-sm font-semibold text-white">ВКонтакте</div>
             <div class="text-[11px] text-neutral-400">vk.ru/vk.loginn • Группа и портфолио</div>
           </div>
         </div>
-        <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-500 group-hover:text-white transition"></i>
+        <svg class="w-4 h-4 text-neutral-500 group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
       </a>
 
       <!-- 4. Phone 1 -->
       <a href="tel:+79270857080" class="btn-contact group">
         <div class="flex items-center gap-3.5">
-          <div class="w-9 h-9 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0">
-            <i data-lucide="phone" class="w-5 h-5"></i>
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0">
+            <!-- Modern Phone Call SVG -->
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.053 15.053 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1.01A11.36 11.36 0 018.57 3.9c0-.55-.45-1-1-1H4.02c-.55 0-1 .45-1 1C3.02 13.04 10.96 21 21 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-.99-1z"/>
+            </svg>
           </div>
           <div class="text-left">
             <div class="text-sm font-semibold text-white">+7 (927) 085-70-80</div>
             <div class="text-[11px] text-neutral-400">Позвонить мастеру (основной)</div>
           </div>
         </div>
-        <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-500 group-hover:text-white transition"></i>
+        <svg class="w-4 h-4 text-neutral-500 group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
       </a>
 
       <!-- 5. Phone 2 -->
       <a href="tel:+79177669076" class="btn-contact group">
         <div class="flex items-center gap-3.5">
-          <div class="w-9 h-9 rounded-lg bg-neutral-800 text-neutral-300 flex items-center justify-center shrink-0">
-            <i data-lucide="phone-call" class="w-5 h-5"></i>
+          <div class="w-10 h-10 rounded-xl bg-neutral-800 text-neutral-300 flex items-center justify-center shrink-0">
+            <!-- Secondary Phone SVG -->
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
           </div>
           <div class="text-left">
             <div class="text-sm font-semibold text-white">+7 (917) 766-90-76</div>
             <div class="text-[11px] text-neutral-400">Дополнительный номер</div>
           </div>
         </div>
-        <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-500 group-hover:text-white transition"></i>
+        <svg class="w-4 h-4 text-neutral-500 group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
       </a>
 
     </div>
 
-    <!-- ================= WHAT WE DO (CLEAN TAGS LIST, NO PRICES) ================= -->
-    <div class="w-full bg-brand-card border border-brand-border rounded-xl p-4 sm:p-5 mb-6 text-left">
+    <!-- ================= SERVICES (CLEAN TAGS) ================= -->
+    <div class="w-full bg-brand-card border border-brand-border rounded-xl p-4 sm:p-5 mb-5 text-left">
       <span class="text-xs font-semibold uppercase tracking-wider text-neutral-400 block mb-3">
-        Чем занимаюсь:
+        Услуги мастера:
       </span>
       
       <div class="flex flex-wrap gap-1.5">
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Тонировка стёкол</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Бронирование зон риска (полиуретан)</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Ремонт лобовых стёкол</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Восстановление оптики</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Установка Bi-LED линз</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Мультируль & Android системы</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Дополнительное оборудование</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Шумоизоляция</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Антидождь</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Полировка & керамика</span>
-        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded border border-brand-border">Химчистка салона</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Тонировка стёкол</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Бронирование зон риска (полиуретан)</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Ремонт лобовых стёкол</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Восстановление оптики</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Установка Bi-LED линз</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Мультируль & Android системы</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Дополнительное оборудование</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Шумоизоляция</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Антидождь</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Полировка & керамика</span>
+        <span class="text-xs bg-brand-bg text-neutral-300 px-2.5 py-1.5 rounded-md border border-brand-border">Химчистка салона</span>
       </div>
     </div>
 
     <!-- Rating Badges -->
-    <div class="flex items-center justify-center gap-3 w-full mb-6">
+    <div class="flex items-center justify-center gap-3 w-full mb-4">
       <div class="flex items-center gap-1.5 text-xs bg-brand-card border border-brand-border px-3 py-1.5 rounded-lg">
         <span class="text-[#fc3f1d] font-bold">Я</span>
         <span class="text-white font-medium">5.0</span>
         <span class="text-amber-400">★★★★★</span>
-        <span class="text-neutral-500 text-[10px]">Карты</span>
+        <span class="text-neutral-500 text-[10px]">Яндекс</span>
       </div>
       <div class="flex items-center gap-1.5 text-xs bg-brand-card border border-brand-border px-3 py-1.5 rounded-lg">
         <span class="text-[#7ac143] font-bold">2Г</span>
@@ -204,7 +232,7 @@
 
     <!-- Working Hours Note -->
     <p class="text-[11px] text-neutral-500 text-center">
-      Приём авто по предварительной записи • Пн–Сб 09:00–20:00
+      Приём по предварительной записи • Пн–Сб 09:00–20:00
     </p>
 
   </main>
@@ -213,8 +241,5 @@
     AUTOSTYLE Detailing & Car Studio © 2026
   </footer>
 
-  <script>
-    lucide.createIcons();
-  </script>
 </body>
 </html>
