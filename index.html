@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Детейлинг и дооснащение авто | Частный мастер</title>
+  <meta name="description" content="Услуги частного мастера по детейлингу, оклейке антигравийной плёнкой, автосвету (Bi-LED) и дооснащению электроникой. Индивидуальный подход, фотоотчёт, гарантия.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            surface: {
+              DEFAULT: '#0f1115',
+              subtle: '#14171d',
+              card: '#1a1e26',
+              cardHover: '#212631',
+              border: '#262c38',
+              borderLight: '#323a49',
+            },
+            accent: {
+              DEFAULT: '#f59e0b',
+              hover: '#d97706',
+              light: '#fef3c7',
+              muted: '#78350f',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Unslop clean scrollbar & base resets */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f1115;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #262c38;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #323a49;
+    }
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+  </style>
+</head>
+<body class="bg-surface text-neutral-300 font-sans antialiased selection:bg-neutral-700 selection:text-white">
+
+  <!-- ================= TOP STATUS BAR ================= -->
+  <div class="border-b border-surface-border bg-surface-subtle text-xs text-neutral-400 py-2 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="text-neutral-300 font-medium">Работаю лично в подготовленном боксе</span>
+        <span class="hidden md:inline text-neutral-500">•</span>
+        <span class="hidden md:inline text-neutral-400">Приём по предварительной записи</span>
+      </div>
+      <div class="flex items-center gap-4 text-neutral-400">
+        <span class="flex items-center gap-1">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-neutral-500"></i>
+          <span>Пн–Сб 09:00–20:00</span>
+        </span>
+        <span class="hidden sm:inline text-neutral-500">•</span>
+        <span class="hidden sm:flex items-center gap-1">
+          <i data-lucide="camera" class="w-3.5 h-3.5 text-neutral-500"></i>
+          <span>Фотоотчёт каждого этапа</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md border-b border-surface-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand / Master identity -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-lg bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+          <i data-lucide="shield-check" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <span class="block text-sm font-semibold text-neutral-100 group-hover:text-white transition">Автодетейлинг & Дооснащение</span>
+          <span class="block text-xs text-neutral-400">Частный мастер • Гарантия на все работы</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm text-neutral-400">
+        <a href="#services" class="hover:text-white transition">Услуги и цены</a>
+        <a href="#calculator" class="hover:text-white transition">Калькулятор</a>
+        <a href="#principles" class="hover:text-white transition">Подход к работе</a>
+        <a href="#reviews" class="hover:text-white transition">Отзывы</a>
+        <a href="#contacts" class="hover:text-white transition">Контакты</a>
+      </nav>
+
+      <!-- Action buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+79990000000" class="hidden sm:inline-flex items-center gap-2 text-xs font-medium text-neutral-300 hover:text-white py-2 px-3 rounded-md bg-surface-card border border-surface-border transition">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-neutral-400"></i>
+          <span>+7 (999) 000-00-00</span>
+        </a>
+        <a href="#contacts" class="inline-flex items-center justify-center text-xs font-medium text-neutral-950 bg-neutral-100 hover:bg-white py-2 px-3.5 rounded-md transition">
+          Записаться
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative pt-12 pb-16 sm:pt-20 sm:pb-24 border-b border-surface-border overflow-hidden">
+    <!-- Subtle architectural grid backdrop -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 text-xs font-medium text-neutral-300 bg-surface-card border border-surface-border px-3 py-1.5 rounded-full mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+            Оклейка, автосвет, детейлинг и дооснащение
+          </div>
+          
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white leading-tight mb-5">
+            Честный детейлинг<br>без посредников и спешки
+          </h1>
+          
+          <p class="text-base text-neutral-400 leading-relaxed max-w-xl mb-8">
+            Работаю сам на себя в чистом оборудованном боксе. Вы всегда знаете, кто именно разбирает салон или наносит керамику. Без текучки мастеров, скрытых доплат и сомнительных материалов.
+          </p>
+
+          <!-- Dual CTA -->
+          <div class="flex flex-wrap items-center gap-3 mb-10">
+            <a href="#calculator" class="inline-flex items-center justify-center gap-2 bg-neutral-100 hover:bg-white text-neutral-950 text-sm font-medium px-5 py-2.5 rounded-md transition shadow-sm">
+              <i data-lucide="calculator" class="w-4 h-4"></i>
+              <span>Рассчитать стоимость онлайн</span>
+            </a>
+            <a href="#contacts" class="inline-flex items-center justify-center gap-2 bg-surface-card hover:bg-surface-cardHover text-neutral-300 hover:text-white border border-surface-border text-sm font-medium px-5 py-2.5 rounded-md transition">
+              <i data-lucide="message-square" class="w-4 h-4 text-neutral-400"></i>
+              <span>Написать в мессенджер</span>
+            </a>
+          </div>
+
+          <!-- Quick trust badges -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-surface-border/60 max-w-lg">
+            <div>
+              <div class="text-xs text-neutral-500 uppercase tracking-wider mb-1">Специализация</div>
+              <div class="text-sm font-semibold text-neutral-200">11 видов услуг</div>
+            </div>
+            <div>
+              <div class="text-xs text-neutral-500 uppercase tracking-wider mb-1">Прозрачность</div>
+              <div class="text-sm font-semibold text-neutral-200">Фото каждого узла</div>
+            </div>
+            <div>
+              <div class="text-xs text-neutral-500 uppercase tracking-wider mb-1">Гарантия</div>
+              <div class="text-sm font-semibold text-neutral-200">До 5 лет на плёнки</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Card / Quick contact console -->
+        <div class="lg:col-span-5">
+          <div class="bg-surface-subtle border border-surface-border rounded-xl p-6 sm:p-7 shadow-xl">
+            <div class="flex items-center justify-between pb-4 mb-5 border-b border-surface-border">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-neutral-500 block mb-0.5">Прямой контакт</span>
+                <span class="text-sm font-semibold text-white">Связаться с мастером</span>
+              </div>
+              <span class="inline-flex items-center gap-1.5 text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-900/60 px-2.5 py-1 rounded-md">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                На связи
+              </span>
+            </div>
+
+            <p class="text-xs text-neutral-400 leading-relaxed mb-6">
+              Пришлите марку автомобиля и задачу (или фото повреждения). Я сориентирую по точным срокам и стоимости в течение 15 минут.
+            </p>
+
+            <!-- Messenger Buttons -->
+            <div class="space-y-2.5 mb-6">
+              <!-- Telegram -->
+              <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="flex items-center justify-between w-full p-3 rounded-lg bg-surface-card hover:bg-surface-cardHover border border-surface-border text-neutral-200 hover:text-white transition group">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-md bg-[#229ED9]/15 text-[#229ED9] flex items-center justify-center">
+                    <i data-lucide="send" class="w-4 h-4"></i>
+                  </div>
+                  <div class="text-left">
+                    <div class="text-xs font-semibold text-white">Telegram</div>
+                    <div class="text-[11px] text-neutral-400">Быстрый ответ и отправка фото</div>
+                  </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-500 group-hover:translate-x-0.5 transition"></i>
+              </a>
+
+              <!-- VKontakte -->
+              <a href="https://vk.com/your_vk" target="_blank" rel="noopener" class="flex items-center justify-between w-full p-3 rounded-lg bg-surface-card hover:bg-surface-cardHover border border-surface-border text-neutral-200 hover:text-white transition group">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-md bg-[#0077FF]/15 text-[#0077FF] flex items-center justify-center">
+                    <i data-lucide="share-2" class="w-4 h-4"></i>
+                  </div>
+                  <div class="text-left">
+                    <div class="text-xs font-semibold text-white">ВКонтакте</div>
+                    <div class="text-[11px] text-neutral-400">Диалог и портфолио работ</div>
+                  </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-500 group-hover:translate-x-0.5 transition"></i>
+              </a>
+
+              <!-- MAX messenger -->
+              <a href="https://max.im/your_max_link" target="_blank" rel="noopener" class="flex items-center justify-between w-full p-3 rounded-lg bg-surface-card hover:bg-surface-cardHover border border-surface-border text-neutral-200 hover:text-white transition group">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-md bg-amber-500/15 text-amber-400 flex items-center justify-center font-bold text-xs">
+                    M
+                  </div>
+                  <div class="text-left">
+                    <div class="text-xs font-semibold text-white">Мессенджер МАКС</div>
+                    <div class="text-[11px] text-neutral-400">Прямой чат с мастером</div>
+                  </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-500 group-hover:translate-x-0.5 transition"></i>
+              </a>
+            </div>
+
+            <!-- Direct Phone -->
+            <div class="text-center pt-3 border-t border-surface-border/50">
+              <a href="tel:+79990000000" class="text-xs text-neutral-400 hover:text-neutral-200 inline-flex items-center gap-1.5 transition">
+                <i data-lucide="phone-call" class="w-3.5 h-3.5 text-neutral-500"></i>
+                <span>Или позвоните: <strong class="text-white font-medium">+7 (999) 000-00-00</strong></span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES SECTION ================= -->
+  <section id="services" class="py-16 sm:py-24 border-b border-surface-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Section Header -->
+      <div class="max-w-2xl mb-12">
+        <span class="text-xs font-medium uppercase tracking-wider text-neutral-400 block mb-2">Направления работы</span>
+        <h2 class="text-2xl sm:text-3xl font-semibold text-white tracking-tight mb-3">Услуги и ориентир цен</h2>
+        <p class="text-sm text-neutral-400 leading-relaxed">
+          Точная стоимость рассчитывается индивидуально в зависимости от класса автомобиля, площади оклейки и исходного состояния деталей. Никаких навязанных услуг.
+        </p>
+      </div>
+
+      <!-- Categories Navigation Pills -->
+      <div class="flex flex-wrap gap-2 mb-8 border-b border-surface-border pb-4" id="serviceTabs">
+        <button onclick="filterServices('all')" class="tab-btn active text-xs font-medium px-3.5 py-1.5 rounded-md bg-neutral-100 text-neutral-950 transition" data-cat="all">
+          Все услуги (11)
+        </button>
+        <button onclick="filterServices('exterior')" class="tab-btn text-xs font-medium px-3.5 py-1.5 rounded-md bg-surface-card hover:bg-surface-cardHover text-neutral-400 hover:text-white border border-surface-border transition" data-cat="exterior">
+          Защита кузова & стёкла
+        </button>
+        <button onclick="filterServices('light')" class="tab-btn text-xs font-medium px-3.5 py-1.5 rounded-md bg-surface-card hover:bg-surface-cardHover text-neutral-400 hover:text-white border border-surface-border transition" data-cat="light">
+          Автосвет & электроника
+        </button>
+        <button onclick="filterServices('interior')" class="tab-btn text-xs font-medium px-3.5 py-1.5 rounded-md bg-surface-card hover:bg-surface-cardHover text-neutral-400 hover:text-white border border-surface-border transition" data-cat="interior">
+          Интерьер & комфорт
+        </button>
+      </div>
+
+      <!-- Service Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="servicesGrid">
+        
+        <!-- 1. Бронирование зон риска -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="exterior">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="shield" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">от 1–2 дней</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Бронирование зон риска</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Оклейка антигравийным полиуретаном: капот, бампер, фары, зеркала, полоса на крышу, зоны под ручками. Защита от гравия и сколов.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 35 000 ₽</span>
+          </div>
+        </div>
+
+        <!-- 2. Тонировка -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="exterior">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="sun-dim" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">2–3 часа</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Тонировка стёкол</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Евротонирование (задняя полусфера), атермальная плёнка по ГОСТу, полоса на лобовое стекло. Качественные американские и корейские плёнки.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 4 500 ₽</span>
+          </div>
+        </div>
+
+        <!-- 3. Ремонт лобовых стёкол -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="exterior">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="crosshair" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">30–60 мин</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Ремонт лобовых стёкол</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Остановка распространения трещин, засверливание и полимеризация сколов любого типа. Сохранение оригинального заводского стекла.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 1 200 ₽</span>
+          </div>
+        </div>
+
+        <!-- 4. Восстановление оптики -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="light">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">2–4 часа</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Восстановление оптики</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Глубокая шлифовка желтизны и матовости, абразивная полировка и обязательная консервация прозрачной полиуретановой бронепленкой.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 4 000 ₽ / пара</span>
+          </div>
+        </div>
+
+        <!-- 5. Установка Bi-LED линз -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="light">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="zap" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">1 день</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Установка Bi-LED линз</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Модернизация штатного галогена или выгоревшего ксенона на яркие светодиодные модули. Четкая СТГ, правильная регулировка на стенде без ослепления встречных.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 22 000 ₽ (с линзами)</span>
+          </div>
+        </div>
+
+        <!-- 6. Мультируль и Android-системы -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="light">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="cpu" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">3–5 часов</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Мультируль & Android системы</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Установка головных устройств на Android (Teyes и аналоги), врезка и подключение штатных кнопок руля, синхронизация с CAN-шиной автомобиля.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 4 000 ₽</span>
+          </div>
+        </div>
+
+        <!-- 7. Дополнительное оборудование -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="light">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="radio" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">по задаче</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Дополнительное оборудование</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Камеры заднего и переднего вида, омыватели камер, парктроники, видеорегистраторы со скрытой прокладкой проводки в штатные короба.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 2 500 ₽</span>
+          </div>
+        </div>
+
+        <!-- 8. Шумоизоляция -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="interior">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="volume-x" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">1–3 дня</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Шумоизоляция</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Вибро- и шумоизоляция дверей для улучшения акустики, колесных арок от дорожного шума, либо комплексная обработка всего кузова премиум-материалами.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 12 000 ₽ (4 двери)</span>
+          </div>
+        </div>
+
+        <!-- 9. Антидождь -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="exterior">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="cloud-rain" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">1 час</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Антидождь (гидрофоб)</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Глубокая очистка стекла от водного камня и нанесение долговечного гидрофобного состава (Aquapel). Вода и грязь сдуваются встречным ветром от 50 км/ч.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 1 500 ₽</span>
+          </div>
+        </div>
+
+        <!-- 10. Полировка и керамика -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="exterior">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="gem" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">1–2 дня</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Полировка & керамика</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Мягкая или восстановительная полировка кузова с удалением до 90% царапин и «паутинки». Нанесение керамических защитных составов 9H для глубины цвета и гидрофоба.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 14 000 ₽</span>
+          </div>
+        </div>
+
+        <!-- 11. Химчистка салона -->
+        <div class="service-card bg-surface-subtle border border-surface-border rounded-lg p-5 flex flex-col justify-between hover:border-surface-borderLight transition" data-category="interior">
+          <div>
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent">
+                <i data-lucide="brush" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono">от 1 дня</span>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-1.5">Химчистка салона</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+              Глубокая очистка сидений, пола, потолка, пластика и ремней безопасности торнадором и экстрактором с последующей принудительной сушкой. Консервация кожи и пластика.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-surface-border/50 flex items-center justify-between">
+            <span class="text-xs text-neutral-400">Стоимость</span>
+            <span class="text-sm font-semibold text-white tabular-nums">от 9 000 ₽</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CALCULATOR SECTION ================= -->
+  <section id="calculator" class="py-16 sm:py-24 border-b border-surface-border bg-surface-subtle">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="max-w-2xl mb-12">
+        <span class="text-xs font-medium uppercase tracking-wider text-neutral-400 block mb-2">Предварительный расчет</span>
+        <h2 class="text-2xl sm:text-3xl font-semibold text-white tracking-tight mb-3">Интерактивный подбор услуг</h2>
+        <p class="text-sm text-neutral-400 leading-relaxed">
+          Отметьте необходимые позиции. Калькулятор посчитает ориентировочную сумму и сформирует готовое сообщение, которое можно отправить мастеру в один клик.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Checklist of services -->
+        <div class="lg:col-span-7 bg-surface border border-surface-border rounded-xl p-5 sm:p-6 space-y-3">
+          
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Бронирование зон риска (плёнка)" data-price="35000">
+              <span class="text-sm font-medium text-white">Бронирование зон риска (плёнка)</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 35 000 ₽</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Тонировка задней полусферы" data-price="4500">
+              <span class="text-sm font-medium text-white">Тонировка задней полусферы</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 4 500 ₽</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Ремонт скола / трещины лобового" data-price="1200">
+              <span class="text-sm font-medium text-white">Ремонт скола / трещины стекла</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 1 200 ₽</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Восстановление оптики + бронирование фар" data-price="4000">
+              <span class="text-sm font-medium text-white">Восстановление оптики + броня фар</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 4 000 ₽</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Установка Bi-LED линз в фары" data-price="22000">
+              <span class="text-sm font-medium text-white">Установка Bi-LED линз</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 22 000 ₽</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Установка Android-магнитолы / мультируля" data-price="4000">
+              <span class="text-sm font-medium text-white">Мультируль / Android-система</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 4 000 ₽</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Шумоизоляция дверей (4 шт.)" data-price="12000">
+              <span class="text-sm font-medium text-white">Шумоизоляция дверей (4 двери)</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 12 000 ₽</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Антидождь (передняя полусфера)" data-price="1500">
+              <span class="text-sm font-medium text-white">Антидождь на стекла</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 1 500 ₽</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Полировка кузова + керамика" data-price="14000">
+              <span class="text-sm font-medium text-white">Полировка кузова + керамика</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 14 000 ₽</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle hover:bg-surface-card border border-surface-border/80 cursor-pointer transition select-none">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" class="calc-checkbox w-4 h-4 rounded text-neutral-900 focus:ring-0 cursor-pointer" data-name="Комплексная химчистка салона" data-price="9000">
+              <span class="text-sm font-medium text-white">Комплексная химчистка салона</span>
+            </div>
+            <span class="text-xs text-neutral-400 tabular-nums">от 9 000 ₽</span>
+          </label>
+
+        </div>
+
+        <!-- Calculation summary & Dispatch panel -->
+        <div class="lg:col-span-5 bg-surface border border-surface-border rounded-xl p-6 sm:p-7 sticky top-24">
+          <div class="text-xs uppercase tracking-wider text-neutral-400 mb-1">Итоговый расчет</div>
+          <div class="text-2xl sm:text-3xl font-semibold text-white tracking-tight tabular-nums mb-4" id="calcTotal">
+            0 ₽
+          </div>
+          
+          <div class="text-xs text-neutral-400 leading-relaxed mb-6 pb-4 border-b border-surface-border">
+            <span id="selectedCountText">Услуги не выбраны. Отметьте нужные пункты слева.</span>
+          </div>
+
+          <div class="space-y-3">
+            <span class="text-xs font-medium text-neutral-400 block mb-2">Отправить мастеру для подтверждения даты:</span>
+            
+            <!-- Send to Telegram -->
+            <button onclick="sendCalculation('tg')" class="w-full inline-flex items-center justify-center gap-2 text-xs font-semibold py-2.5 px-4 rounded-md bg-[#229ED9]/20 hover:bg-[#229ED9]/30 text-[#229ED9] border border-[#229ED9]/40 transition">
+              <i data-lucide="send" class="w-3.5 h-3.5"></i>
+              <span>Отправить список в Telegram</span>
+            </button>
+
+            <!-- Send to VK -->
+            <button onclick="sendCalculation('vk')" class="w-full inline-flex items-center justify-center gap-2 text-xs font-semibold py-2.5 px-4 rounded-md bg-[#0077FF]/20 hover:bg-[#0077FF]/30 text-[#0077FF] border border-[#0077FF]/40 transition">
+              <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
+              <span>Отправить список ВКонтакте</span>
+            </button>
+
+            <!-- Send to MAX -->
+            <button onclick="sendCalculation('max')" class="w-full inline-flex items-center justify-center gap-2 text-xs font-semibold py-2.5 px-4 rounded-md bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/40 transition">
+              <span class="font-bold text-xs">M</span>
+              <span>Отправить в мессенджер МАКС</span>
+            </button>
+          </div>
+
+          <p class="text-[11px] text-neutral-500 mt-4 leading-normal">
+            * Итоговая сумма является ориентировочной базовой стоимостью. Точный расчет подтверждается после осмотра автомобиля мастером.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PRINCIPLES SECTION ================= -->
+  <section id="principles" class="py-16 sm:py-24 border-b border-surface-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="max-w-2xl mb-12">
+        <span class="text-xs font-medium uppercase tracking-wider text-neutral-400 block mb-2">Стандарты качества</span>
+        <h2 class="text-2xl sm:text-3xl font-semibold text-white tracking-tight mb-3">Почему частный мастер, а не сетевой сервис</h2>
+        <p class="text-sm text-neutral-400 leading-relaxed">
+          Главная проблема крупных потоковых сервисов — конвейер и обезличенная ответственность. Моя цель — чтобы вы вернулись на следующей машине и рекомендовали друзьям.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-5 rounded-lg bg-surface-subtle border border-surface-border">
+          <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent mb-4">
+            <i data-lucide="user-check" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-semibold text-white mb-2">Личная ответственность</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">
+            От момента приёмки ключей до выдачи с автомобилем работаю лично я. Нет передачи третьим лицам или стажёрам.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-lg bg-surface-subtle border border-surface-border">
+          <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent mb-4">
+            <i data-lucide="camera" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-semibold text-white mb-2">Фотоотчёт каждого шага</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">
+            Присылаю фото и видео в мессенджер: состояние до, процесс подготовки, скрытые узлы, подгонка проводки и итоговый результат.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-lg bg-surface-subtle border border-surface-border">
+          <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent mb-4">
+            <i data-lucide="wrench" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-semibold text-white mb-2">Бережная разборка</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">
+            Специальный инструмент под автокрепеж. Никаких сломанных пистонов, заломов обшивки или скрипов после сборки салона.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-lg bg-surface-subtle border border-surface-border">
+          <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-accent mb-4">
+            <i data-lucide="shield-alert" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-semibold text-white mb-2">Честные материалы</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">
+            Только оригинальный полиуретан (без дешёвого гибрида), качественные светодиодные модули и профессиональная автохимия Koch / CarPro.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS SECTION (FREE YANDEX & 2GIS BADGES) ================= -->
+  <section id="reviews" class="py-16 sm:py-24 border-b border-surface-border bg-surface-subtle">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Section Header with Badges -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="max-w-xl">
+          <span class="text-xs font-medium uppercase tracking-wider text-neutral-400 block mb-2">Репутация и отзывы</span>
+          <h2 class="text-2xl sm:text-3xl font-semibold text-white tracking-tight mb-3">Оценки реальных автовладельцев</h2>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            Отзывы на независимых геосервисах подтверждены чеками и геопозицией клиентов. Вы можете проверить каждый из них.
+          </p>
+        </div>
+
+        <!-- Free Review Platforms Badges -->
+        <div class="flex items-center gap-3 flex-wrap">
+          <!-- Yandex Maps Badge -->
+          <a href="https://yandex.ru/maps" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface border border-surface-border hover:border-surface-borderLight transition">
+            <div class="w-5 h-5 rounded bg-[#fc3f1d]/20 text-[#fc3f1d] flex items-center justify-center font-bold text-xs">Я</div>
+            <div class="text-left">
+              <div class="text-xs font-semibold text-white flex items-center gap-1">
+                <span>5.0</span>
+                <span class="text-amber-400">★★★★★</span>
+              </div>
+              <div class="text-[10px] text-neutral-500">Яндекс Карты</div>
+            </div>
+          </a>
+
+          <!-- 2GIS Badge -->
+          <a href="https://2gis.ru" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface border border-surface-border hover:border-surface-borderLight transition">
+            <div class="w-5 h-5 rounded bg-[#7ac143]/20 text-[#7ac143] flex items-center justify-center font-bold text-xs">2Г</div>
+            <div class="text-left">
+              <div class="text-xs font-semibold text-white flex items-center gap-1">
+                <span>4.9</span>
+                <span class="text-amber-400">★★★★★</span>
+              </div>
+              <div class="text-[10px] text-neutral-500">Рейтинг 2ГИС</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Real Reviews Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-5 rounded-lg bg-surface border border-surface-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold text-white">Александр М.</span>
+              <span class="text-xs text-amber-400">★★★★★</span>
+            </div>
+            <span class="text-[11px] text-neutral-500 block mb-3 font-mono">Toyota Camry • Bi-LED + броня фар</span>
+            <p class="text-xs text-neutral-300 leading-relaxed mb-4">
+              «Штатный ксенон перестал светить совсем. Мастер подобрал линзы, установил за один день, аккуратно загерметизировал фары и закатал в полиуретан. Ночью теперь видно как днём, никого не слепит. Огромный плюс за постоянные фото в телеграм во время работы.»
+            </p>
+          </div>
+          <span class="text-[10px] text-neutral-500">Отзыв из Яндекс Карт</span>
+        </div>
+
+        <div class="p-5 rounded-lg bg-surface border border-surface-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold text-white">Дмитрий С.</span>
+              <span class="text-xs text-amber-400">★★★★★</span>
+            </div>
+            <span class="text-[11px] text-neutral-500 block mb-3 font-mono">Kia K5 • Зоны риска + тонировка</span>
+            <p class="text-xs text-neutral-300 leading-relaxed mb-4">
+              «Загонял новую машину сразу из автосалона на оклейку капота, бампера и зеркал, плюс тонировку задней полусферы. Сделано безупречно: края подвернуты, никаких пылинок под пленкой. Приятно иметь дело с человеком, который дорожит своим именем.»
+            </p>
+          </div>
+          <span class="text-[10px] text-neutral-500">Отзыв из 2ГИС</span>
+        </div>
+
+        <div class="p-5 rounded-lg bg-surface border border-surface-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold text-white">Игорь В.</span>
+              <span class="text-xs text-amber-400">★★★★★</span>
+            </div>
+            <span class="text-[11px] text-neutral-500 block mb-3 font-mono">BMW 3 Series • Полировка + химчистка</span>
+            <p class="text-xs text-neutral-300 leading-relaxed mb-4">
+              «Делал комплексную предпродажную подготовку. Салон очищен идеально, даже въевшиеся пятна с алькантары ушли. После полировки кузов выглядит лучше, чем когда покупал. Машину продал за 3 дня по верхней планке рынка.»
+            </p>
+          </div>
+          <span class="text-[10px] text-neutral-500">Отзыв из Яндекс Карт</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACTS & BOOKING ================= -->
+  <section id="contacts" class="py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Contacts Details -->
+        <div class="lg:col-span-6">
+          <span class="text-xs font-medium uppercase tracking-wider text-neutral-400 block mb-2">Локация и связь</span>
+          <h2 class="text-2xl sm:text-3xl font-semibold text-white tracking-tight mb-4">Запись и консультация</h2>
+          <p class="text-sm text-neutral-400 leading-relaxed mb-8">
+            Напишите в удобный мессенджер или позвоните. Если я занят работой с оптикой или нанесением состава, могу ответить не мгновенно, но обязательно отвечу в течение часа.
+          </p>
+
+          <div class="space-y-4 mb-8">
+            
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-neutral-400 shrink-0">
+                <i data-lucide="map-pin" class="w-4 h-4 text-accent"></i>
+              </div>
+              <div>
+                <span class="text-xs text-neutral-500 block">Адрес мастерской</span>
+                <span class="text-sm font-medium text-white">Укажите ваш город и улицу (бокс с удобным заездом)</span>
+                <span class="text-xs text-neutral-500 block mt-0.5">Охраняемая закрытая территория</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-neutral-400 shrink-0">
+                <i data-lucide="clock" class="w-4 h-4 text-accent"></i>
+              </div>
+              <div>
+                <span class="text-xs text-neutral-500 block">График приёма</span>
+                <span class="text-sm font-medium text-white">Понедельник — Суббота: с 09:00 до 20:00</span>
+                <span class="text-xs text-neutral-500 block mt-0.5">Воскресенье — по предварительной договоренности</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded bg-surface-card border border-surface-border flex items-center justify-center text-neutral-400 shrink-0">
+                <i data-lucide="phone" class="w-4 h-4 text-accent"></i>
+              </div>
+              <div>
+                <span class="text-xs text-neutral-500 block">Телефон мастера</span>
+                <a href="tel:+79990000000" class="text-sm font-medium text-white hover:text-accent transition">+7 (999) 000-00-00</a>
+                <span class="text-xs text-neutral-500 block mt-0.5">Звонки, SMS</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 3 Quick messenger pills -->
+          <div class="flex flex-wrap gap-3">
+            <a href="https://t.me/your_telegram" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-medium px-4 py-2.5 rounded-lg bg-surface-card hover:bg-surface-cardHover border border-surface-border text-white transition">
+              <i data-lucide="send" class="w-3.5 h-3.5 text-[#229ED9]"></i>
+              <span>Telegram</span>
+            </a>
+            <a href="https://vk.com/your_vk" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-medium px-4 py-2.5 rounded-lg bg-surface-card hover:bg-surface-cardHover border border-surface-border text-white transition">
+              <i data-lucide="share-2" class="w-3.5 h-3.5 text-[#0077FF]"></i>
+              <span>ВКонтакте</span>
+            </a>
+            <a href="https://max.im/your_max_link" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-medium px-4 py-2.5 rounded-lg bg-surface-card hover:bg-surface-cardHover border border-surface-border text-white transition">
+              <span class="text-amber-400 font-bold text-xs">M</span>
+              <span>Мессенджер МАКС</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Fast direct application card -->
+        <div class="lg:col-span-6 bg-surface-subtle border border-surface-border rounded-xl p-6 sm:p-8">
+          <h3 class="text-base font-semibold text-white mb-2">Быстрая заявка на консультацию</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed mb-6">
+            Заполните 3 поля, и данные сразу сформируются в готовый запрос для отправки мастеру.
+          </p>
+
+          <form id="contactForm" onsubmit="submitForm(event)" class="space-y-4">
+            <div>
+              <label for="carModel" class="block text-xs font-medium text-neutral-400 mb-1.5">Марка и модель авто</label>
+              <input type="text" id="carModel" placeholder="Например: Kia K5, 2021" required class="w-full text-xs bg-surface border border-surface-border rounded-md px-3.5 py-2.5 text-white placeholder-neutral-600 focus:outline-none focus:border-neutral-400 transition">
+            </div>
+
+            <div>
+              <label for="chosenService" class="block text-xs font-medium text-neutral-400 mb-1.5">Интересующая услуга</label>
+              <select id="chosenService" class="w-full text-xs bg-surface border border-surface-border rounded-md px-3.5 py-2.5 text-white focus:outline-none focus:border-neutral-400 transition">
+                <option value="Бронирование зон риска">Бронирование зон риска (плёнка)</option>
+                <option value="Тонировка стекол">Тонировка стекол</option>
+                <option value="Ремонт лобового стекла">Ремонт лобового стекла</option>
+                <option value="Восстановление оптики">Восстановление оптики</option>
+                <option value="Установка Bi-LED линз">Установка Bi-LED линз</option>
+                <option value="Мультируль / Android-система">Мультируль / Android-система</option>
+                <option value="Дополнительное оборудование">Дополнительное оборудование</option>
+                <option value="Шумоизоляция">Шумоизоляция</option>
+                <option value="Антидождь">Антидождь</option>
+                <option value="Полировка и керамика">Полировка и керамика</option>
+                <option value="Химчистка салона">Химчистка салона</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="userComment" class="block text-xs font-medium text-neutral-400 mb-1.5">Комментарий или вопрос (необязательно)</label>
+              <textarea id="userComment" rows="3" placeholder="Опишите задачу или удобный день для приезда..." class="w-full text-xs bg-surface border border-surface-border rounded-md px-3.5 py-2.5 text-white placeholder-neutral-600 focus:outline-none focus:border-neutral-400 transition"></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full inline-flex items-center justify-center gap-2 text-xs font-semibold py-2.5 px-4 rounded-md bg-neutral-100 hover:bg-white text-neutral-950 transition">
+                <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                <span>Сформировать сообщение для мастера</span>
+              </button>
+            </div>
+
+            <p class="text-[11px] text-neutral-500 text-center">
+              После нажатия откроется диалог в выбранном мессенджере с заполненным текстом.
+            </p>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-surface-border bg-surface-subtle py-8 text-xs text-neutral-500">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="text-neutral-400 font-medium">Автодетейлинг & Дооснащение</span>
+        <span>• Частный мастер</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#services" class="hover:text-neutral-300 transition">Услуги</a>
+        <a href="#calculator" class="hover:text-neutral-300 transition">Калькулятор</a>
+        <a href="#reviews" class="hover:text-neutral-300 transition">Отзывы</a>
+        <a href="#contacts" class="hover:text-neutral-300 transition">Контакты</a>
+      </div>
+      <div>
+        <span>© 2026. Все права защищены.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= CLIENT JAVASCRIPT ================= -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // 1. Service Category Filter
+    function filterServices(category) {
+      const cards = document.querySelectorAll('.service-card');
+      const buttons = document.querySelectorAll('#serviceTabs .tab-btn');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-cat') === category) {
+          btn.classList.remove('bg-surface-card', 'text-neutral-400');
+          btn.classList.add('bg-neutral-100', 'text-neutral-950');
+        } else {
+          btn.classList.remove('bg-neutral-100', 'text-neutral-950');
+          btn.classList.add('bg-surface-card', 'text-neutral-400');
+        }
+      });
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // 2. Calculator Logic
+    const checkboxes = document.querySelectorAll('.calc-checkbox');
+    const totalEl = document.getElementById('calcTotal');
+    const countEl = document.getElementById('selectedCountText');
+
+    function updateCalculator() {
+      let sum = 0;
+      let count = 0;
+      let selectedNames = [];
+
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          sum += parseInt(cb.getAttribute('data-price'), 10);
+          count++;
+          selectedNames.push(cb.getAttribute('data-name'));
+        }
+      });
+
+      totalEl.textContent = sum.toLocaleString('ru-RU') + ' ₽';
+      if (count === 0) {
+        countEl.textContent = 'Услуги не выбраны. Отметьте нужные пункты слева.';
+      } else {
+        countEl.textContent = `Выбрано услуг: ${count} шт. на сумму ~${sum.toLocaleString('ru-RU')} ₽`;
+      }
+    }
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', updateCalculator);
+    });
+
+    // 3. Dispatch to Messengers from Calculator
+    function sendCalculation(platform) {
+      let selected = [];
+      let sum = 0;
+
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          selected.push('• ' + cb.getAttribute('data-name'));
+          sum += parseInt(cb.getAttribute('data-price'), 10);
+        }
+      });
+
+      if (selected.length === 0) {
+        alert('Пожалуйста, выберите хотя бы одну услугу в калькуляторе.');
+        return;
+      }
+
+      const text = `Здравствуйте! Хочу уточнить детали и записаться на услуги:\n${selected.join('\n')}\nОриентировочная сумма: ~${sum.toLocaleString('ru-RU')} ₽\nПодскажите, когда есть свободные окна?`;
+      const encoded = encodeURIComponent(text);
+
+      if (platform === 'tg') {
+        window.open(`https://t.me/your_telegram?text=${encoded}`, '_blank');
+      } else if (platform === 'vk') {
+        window.open(`https://vk.com/im?sel=-YOUR_VK_ID&text=${encoded}`, '_blank');
+      } else if (platform === 'max') {
+        window.open(`https://max.im/your_max_link?text=${encoded}`, '_blank');
+      }
+    }
+
+    // 4. Contact Form Dispatch
+    function submitForm(e) {
+      e.preventDefault();
+      const car = document.getElementById('carModel').value;
+      const service = document.getElementById('chosenService').value;
+      const comment = document.getElementById('userComment').value;
+
+      let msg = `Здравствуйте! Заявка с сайта:\nАвтомобиль: ${car}\nУслуга: ${service}`;
+      if (comment) {
+        msg += `\nКомментарий: ${comment}`;
+      }
+
+      const encoded = encodeURIComponent(msg);
+      // Opens telegram by default, or prompts choice
+      window.open(`https://t.me/your_telegram?text=${encoded}`, '_blank');
+    }
+  </script>
+</body>
+</html>
